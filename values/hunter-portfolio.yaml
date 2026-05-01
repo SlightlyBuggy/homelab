@@ -1,0 +1,7 @@
+# Environment-specific overrides for hunter-portfolio.
+# Chart defaults live in ../personalSite/helm/hunter/values.yaml.
+# Only add values here that differ from those defaults.
+
+# Example: pin a specific image tag for prod
+# image:
+#   tag: "1.2.3"

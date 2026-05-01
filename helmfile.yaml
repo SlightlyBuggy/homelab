@@ -1,0 +1,12 @@
+releases:
+  - name: rain-barrel-automation
+    chart: ../rain-barrel-automation-helm
+    namespace: default
+    values:
+      - values/rain-barrel.yaml
+
+  - name: hunter-portfolio
+    chart: ../personalSite/helm/hunter
+    namespace: default
+    values:
+      - values/hunter-portfolio.yaml

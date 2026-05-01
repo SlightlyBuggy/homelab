@@ -1,0 +1,9 @@
+# Environment-specific overrides for rain-barrel-automation.
+# Chart defaults live in ../rain-barrel-automation-helm/values.yaml.
+# Only add values here that differ from those defaults.
+
+# Example: pin a specific image tag for prod
+# services:
+#   web:
+#     app:
+#       tag: "1.2.3"
