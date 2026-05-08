@@ -1,6 +1,9 @@
-.PHONY: sync diff sync-portfolio sync-rain-barrel
+.PHONY: sync diff apply-manifests sync-portfolio sync-rain-barrel
 
-sync:
+apply-manifests:
+	kubectl apply -f manifests/
+
+sync: apply-manifests
 	helmfile sync
 
 diff:
