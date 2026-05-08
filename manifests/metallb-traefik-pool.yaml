@@ -1,0 +1,12 @@
+# Patch the existing ip-pool to disable auto-assignment.
+# All services must explicitly request an IP — prevents any service
+# from accidentally grabbing an address that belongs to another.
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: ip-pool
+  namespace: metallb-system
+spec:
+  addresses:
+    - 192.168.0.132/26
+  autoAssign: false
